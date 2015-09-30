@@ -1,0 +1,43 @@
+{{yield}}
+<center>
+  <h1>{{movie.Title}}</h1>
+</center>
+
+<div class='col-md-4 thumb'>
+  <img src={{movie.Poster}} alt={{movie.Title}}>
+  <p><span class="bold">Metascore: </span>{{movie.Metascore}}</p>
+</div>
+
+<div class='col-md-8'>
+  <hr>
+  <p><span class="bold">Director: </span>{{movie.Director}}</p>
+  <p><span class="bold">Writer: </span>{{movie.Writer}}</p>
+  <p><span class="bold">Actors: </span>{{movie.Actors}}</p>
+  <p><span class="bold">Released: </span>{{movie.Released}}</p>
+  <p><span class="bold">Runtime: </span>{{movie.Runtime}}</p>
+  <p><span class="bold">Rated: </span>{{movie.Rated}}</p>
+  <p><span class="bold">Plot: </span>{{movie.Plot}}</p>
+</div>
+
+
+
+<!-- Actors: DS.attr(),
+Awards: DS.attr(),
+Country: DS.attr(),
+Directory: DS.attr(),
+Genre: DS.attr(),
+Language: DS.attr(),
+Metascore: DS.attr(),
+Plot: DS.attr(),
+Poster: DS.attr(),
+Rated: DS.attr(),
+Released: DS.attr(),
+Response: DS.attr(),
+Runtime: DS.attr(),
+Title: DS.attr(),
+Type: DS.attr(),
+Writer: DS.attr(),
+Year: DS.attr(),
+imdbID: DS.attr(),
+imdbRating: DS.attr(),
+imdbVotes: DS.attr() -->

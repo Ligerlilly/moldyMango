@@ -5,7 +5,7 @@ export default DS.Model.extend({
   Actors: DS.attr(),
   Awards: DS.attr(),
   Country: DS.attr(),
-  Directory: DS.attr(),
+  Director: DS.attr(),
   Genre: DS.attr(),
   Language: DS.attr(),
   Metascore: DS.attr(),

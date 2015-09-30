@@ -1,0 +1,14 @@
+<div id="name" class='col-md-4'>
+  <center>
+    {{#link-to 'movie' movie.id}}
+      <img class='thumb' src={{movie.Poster}} alt={{movie.Title}} />
+    {{/link-to}}
+
+    <h4>{{movie.Title}}<br>
+      <small>
+        Metascore: {{movie.Metascore}}
+      </small>
+    </h4>
+  </center>
+</div>
+{{yield}}

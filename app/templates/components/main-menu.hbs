@@ -1,9 +1,6 @@
-<ul>
-  {{#each movies as |movie|}}
-    <li>
-      {{movie.Title}}
-      <img src={{movie.Poster}} alt="" />
-    </li>
-  {{/each}}
-</ul>
 {{yield}}
+<div class='row'>
+  {{#each movies as |movie|}}
+    {{movie-tile movie=movie}}
+  {{/each}}
+</div>
