@@ -24,3 +24,8 @@ ul {
   width: 25px;
   height: 25px;
 }
+#map {
+  width: 500px;
+  height: 400px;
+  background-color: #CCC;
+}

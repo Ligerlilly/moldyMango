@@ -26,7 +26,6 @@ export default Ember.Component.extend({
         rating: mangos(this.get('rating'))
 
       }
-      debugger;
       this.sendAction("addReview", params);
       this.set('newReview', false);
       window.location.reload();
