@@ -1,0 +1,9 @@
+{{yield}}
+{{#each reviews as |review|}}
+  <div class="col-md-12">
+    <h3>{{review.title}} <small>created: {{moment-from-now review.createdAt}}</small></h3>
+    <p><span class='bold'>Author:</span> {{review.author}}</p>
+    <p>{{mango-show review=review}}</p>
+    <p>{{review.content}}</p>
+  </div>
+{{/each}}

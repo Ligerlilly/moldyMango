@@ -21,5 +21,6 @@ export default DS.Model.extend({
   Year: DS.attr(),
   imdbID: DS.attr(),
   imdbRating: DS.attr(),
-  imdbVotes: DS.attr()
+  imdbVotes: DS.attr(),
+  reviews: DS.hasMany('review', {async: true})
 });
