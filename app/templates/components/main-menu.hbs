@@ -1,0 +1,9 @@
+<ul>
+  {{#each movies as |movie|}}
+    <li>
+      {{movie.Title}}
+      <img src={{movie.Poster}} alt="" />
+    </li>
+  {{/each}}
+</ul>
+{{yield}}
