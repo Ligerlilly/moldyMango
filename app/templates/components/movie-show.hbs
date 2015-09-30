@@ -1,11 +1,14 @@
 {{yield}}
 <center>
-  <h1>{{movie.Title}}</h1>
+  <h1>
+    {{movie.Title}}<br>
+    <small >{{moldy-img movie=movie }} <span><span class="bold">Metascore: </span>{{movie.Metascore}}</span></small>
+  </h1>
 </center>
 
 <div class='col-md-4 thumb'>
   <img src={{movie.Poster}} alt={{movie.Title}}>
-  <p><span class="bold">Metascore: </span>{{movie.Metascore}}</p>
+
 </div>
 
 <div class='col-md-8'>
