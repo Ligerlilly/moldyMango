@@ -29,3 +29,7 @@ ul {
   height: 400px;
   background-color: #CCC;
 }
+
+.button-inline {
+  display: inline;
+}

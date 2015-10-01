@@ -19,13 +19,14 @@ export default Ember.Component.extend({
     addReview() {
       var params = {
         title: this.get('title'),
-        author: this.get('author'),
+        author: this.get('session.currentUser.email'),
         content: this.get('content'),
         createdAt: new Date(),
         movie: this.get('movie'),
         rating: mangos(this.get('rating'))
 
       }
+      debugger;
       this.sendAction("addReview", params);
       this.set('newReview', false);
       window.location.reload();

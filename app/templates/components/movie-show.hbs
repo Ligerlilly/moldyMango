@@ -21,7 +21,7 @@
   <p><span class="bold">Rated: </span>{{movie.Rated}}</p>
   <p><span class="bold">Plot: </span>{{movie.Plot}}</p>
 
-  {{review-add movie=movie addReview="addReview"}}
+  {{review-add movie=movie addReview="addReview" session=session}}
   <div class='row'>
     {{review-tile reviews=movie.reviews}}
   </div>

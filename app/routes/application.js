@@ -1,5 +1,7 @@
 import Ember from 'ember';
+
 var ref = new Firebase("https://moldy-mangos.firebaseio.com");
+
 var signIn = function(provider, params) {
   ref.authWithPassword({
     email    : params.email,
