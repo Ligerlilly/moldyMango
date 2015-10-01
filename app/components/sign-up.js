@@ -8,9 +8,10 @@ export default Ember.Component.extend({
     },
     signUp() {
       var params = {
+        name: this.get('name'),
         email: this.get('email'),
         password: this.get('password')
-      }
+      };
 
       this.sendAction('signUp', params);
       this.set('newUser', false);

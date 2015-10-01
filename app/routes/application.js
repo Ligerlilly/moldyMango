@@ -14,23 +14,35 @@ var signIn = function(provider, params) {
       window.location.reload();
     }
   });
-}
+};
 
 export default Ember.Route.extend({
   beforeModel: function() {
     return this.get("session").fetch().catch(function() {});
   },
+  user() {
+    var user = this.store.findRecord('user', this.get('session.currentUser.email'));
+    return user ? user : 'blah';
+  },
   actions: {
     signUp: function(params) {
+      var self = this;
+      var session = this.get('session');
+
       ref.createUser({
         email    : params.email,
-        password : params.password,
-        username : 'dude'
+        password : params.password
       }, function(error, userData) {
         if (error) {
           console.log("Error creating user:", error);
         } else {
           console.log("Successfully created user account with uid:", userData.uid);
+
+          var newUser = self.store.createRecord('user', params);
+          newUser.save();
+          session.id = newUser.id;
+          self.set('session', session);
+          debugger;
         }
 
         // auto sign in
