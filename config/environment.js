@@ -19,7 +19,7 @@ module.exports = function(environment) {
     },
     contentSecurityPolicy: {
       'default-src': "'none'",
-      'script-src': "'self' 'unsafe-eval' https://*.firebaseio.com https://*.googleapis.com https://*.gstatic.com",
+      'script-src': "'self' 'unsafe-eval' https://*.firebaseio.com https://*.googleapis.com https://*.gstatic.com http://*.telize.com/*" ,
       'font-src': "'self' https://*.gstatic.com",
       'connect-src': "'self' wss://*.firebaseio.com",
       'img-src': "'self' *",

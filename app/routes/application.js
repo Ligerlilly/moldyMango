@@ -24,7 +24,8 @@ export default Ember.Route.extend({
     signUp: function(params) {
       ref.createUser({
         email    : params.email,
-        password : params.password
+        password : params.password,
+        username : 'dude'
       }, function(error, userData) {
         if (error) {
           console.log("Error creating user:", error);
